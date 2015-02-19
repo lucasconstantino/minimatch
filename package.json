@@ -10,7 +10,7 @@
   "main": "minimatch.js",
   "scripts": {
     "test": "tap test/*.js",
-    "prepublish": "browserify -o browser.js -e minimatch.js"
+    "prepublish": "browserify -o browser.js -e minimatch.js; mkdir js; browserify -o js/minimatch.js -e minimatch-exposed.js"
   },
   "engines": {
     "node": "*"
